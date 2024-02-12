@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FUTSAL FEMININO PALOTINA</title>
+    <link rel="icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="./var.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="page">
+
+        <header>
+            <div class="top">
+                <h1>
+                    FUTSAL FEMININO PALOTINA
+                </h1>
+                <h4>
+                    Chegou a hora, jogadora! Por favor, forneça os dados necessários para a sua inscrição. Vamos lá?
+                </h4>
+            </div>
+        </header>
+
+        <form action="" class="my-from">
+            <fieldset>
+
+                <div class="Personal">
+                    <legend>
+                        Informações pessoais
+                    </legend>
+                </div>
+
+                <div class="inputs">
+                    <div>
+                        <label for="name"> Nome <span>(completo)</span> </label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div>
+                        <label for="CPF"> CPF <span>(XXX.XXX.XXX-XX)</span> </label>
+                        <input type="number" id="CPF" name="CPF" maxlength="14" oninput="formatarCPF(this)">
+                    </div>
+                    <div>
+                        <label for="RG"> RG <span>(completo)</span> </label>
+                        <input type="number" id="RG" name="RG">
+                    </div>
+                    <div>
+                        <label for="estado"> Estado </label>
+                        <select name="estado" id="estado">
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="PR">Paraná</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                        </select>
+                    </div>
+                </div>
+
+            </fieldset>
+
+            <button>
+                <input form="my-from" class="button" type="submit" value="salvar">
+            </button>
+
+
+        </form>
+
+    </div>
+    <div class="bottom-image">
+
+    </div>
+</body>
+
+</html>
